@@ -26,6 +26,8 @@ alias cddev="cd ~/sources" # adjust path to your dev folder if different
 # Open current directory in Finder
 alias o.="open ."
 
+alias lsblk="diskutil list"
+
 # Quick ls-based directory listings
 alias l="ls -lh"
 alias la="ls -lha"
@@ -57,4 +59,5 @@ zinit light zsh-users/zsh-completions
 . /opt/homebrew/etc/profile.d/z.sh
 
 # brew install fzf
-$(brew --prefix)/opt/fzf/install
+# $(brew --prefix)/opt/fzf/install
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
