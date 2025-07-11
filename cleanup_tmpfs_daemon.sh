@@ -3,7 +3,7 @@
 ### 1. Configuration
 
 USER_NAME="jasonmini" # ← change to your macOS short username
-MOUNT_POINT="/Users/$USER_NAME/tmpfsMnt"
+MOUNT_POINT="/Volumes/jasonmini-xt/jasonmini/tmpfsMnt"
 PLIST_FILE="/Library/LaunchDaemons/com.user.mounttmpfs.plist"
 
 ### 2. Unload the LaunchDaemon
