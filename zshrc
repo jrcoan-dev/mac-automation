@@ -12,6 +12,27 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+
+# additional history options
+# Write new commands to $HISTFILE as you run them (with timestamps)
+setopt INC_APPEND_HISTORY_TIME
+
+# Don’t overwrite the history file on exit; append to it
+setopt APPEND_HISTORY
+
+# Merge history across concurrently open shells
+setopt SHARE_HISTORY
+
+# (Nice-to-haves)
+setopt HIST_IGNORE_DUPS      # skip consecutive dupes
+setopt HIST_IGNORE_SPACE     # commands starting with a space aren’t saved
+setopt EXTENDED_HISTORY      # store timestamps & durations
+
+
+
+
+
+
 alias ..="cd .."
 
 alias ...="cd ../.."
